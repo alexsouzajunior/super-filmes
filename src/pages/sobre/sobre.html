@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Filmes - Sobre</title>
+    <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
+    <link rel="stylesheet" href="/src/styles/navigation-bar.css">
+    <link rel="stylesheet" href="/src/styles/main-content.css">
+    <link rel="stylesheet" href="/src/styles/media-queries.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="navbar container__navbar">
+        <section class="navbar__left">
+            <a href="/index.html" class="logo">
+                Super <span>Filmes</span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </section>
+        <section class="navbar__center">
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <span class="menu__arrow"><i class="ri-arrow-left-s-line"></i>Voltar</span>
+                    <span class="menu__title"></span>
+                </div>
+                <ul class="menu__inner">
+                    <li class="menu__item"><a href="/index.html" class="menu__link">Início</a></li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Filmes</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Filmes</span>
+                            <div class="submenu__category">
+                                <a href="/src/pages/movies/acao/acao.html">
+                                    <span class="submenu__titlemain">Ação</span>
+                                </a>
+                            </div>
+                            <div class="submenu__category">
+                                <a href="/src/pages/movies/aventura/aventura.html">
+                                    <span class="submenu__titlemain">Aventura</span>
+                                </a>
+                            </div>
+                            <div class="submenu__category">
+                                <a href="/src/pages/movies/animacao/animacao.html">
+                                    <span class="submenu__titlemain">Animação</span>
+                                </a>
+                            </div>
+                            <div class="submenu__category">
+                                <a href="/src/pages/movies/biblicos/biblicos.html">
+                                    <span class="submenu__titlemain">Bíblicos</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Séries</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Séries</span>
+                            <div class="submenu__category">
+                                <a href="/src/pages/series/acao/acao.html">
+                                    <span class="submenu__titlemain">Ação</span>
+                                </a>
+                            </div>
+                            <div class="submenu__category">
+                                <a href="/src/pages/series/animacao/animacao.html">
+                                    <span class="submenu__titlemain">Animação</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="sign-in-hidden">
+                        <a role="button" href="/src/pages/login/login.html">Login</a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="navbar__right">
+            <div class="sign-in">
+                <a role="button" href="/src/pages/login/login.html">Login</a>
+            </div>
+            <div class="searchBox-container">
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class="ri-close-line cancel"></i>
+                        <i class="ri-search-line search"></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="search" placeholder="Buscar">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+</header>
+<section class=" flex items-center min-h-screen">
+    <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 relative">
+        <div class="flex justify-around max-md:flex-col">
+            <div class="lg:pr-32 flex items-center">
+                <div class="data w-full">
+                    <h2 class="font-manrope font-semibold text-4xl lg:text-4xl text-white mb-8 max-lg:text-center">
+                        Sobre a Super Filmes
+                    </h2>
+                    <p class="text-lg leading-8 text-gray-400 max-lg:text-center max-w-[500px] mx-auto">
+                        A Super Filmes e um site de filmes e series(streaming), a Super Filmes tem a total responsabilidade de colocar os seus conteudos e com toda a segurança pros nossos clientes no site.
+                    </p>
+                </div>
+            </div>
+            <div class="image__box">
+                <img src="/src/assets/about/pessoas-assistindo-na-tv.png" class="hidden lg:block mx-auto" alt="pessoas assistindo na tv" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer__content">
+        <h2 class="logo__superfilmes">Super Filmes</h2>
+        <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
+    </div>
+</footer>
+
+<script src="/src/scripts/app.js"></script>
+</body>
+</html>

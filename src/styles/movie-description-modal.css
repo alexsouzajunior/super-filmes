@@ -1,0 +1,110 @@
+.modal{
+    font-family: var(--font-modalMovie);
+}
+
+.modal .image__poster--modal img{
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal .image__poster--modal{
+    display: flex;
+    float: left;
+    margin-right: 20px;
+}
+
+.modal .title{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.modal .tags-movie{
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal .tags-movie span{
+    margin-right: 5px;
+    background: #1c1a1a;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 1px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.modal .class-movie{
+    background: #000428;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.modal .class-movie .ri-star-fill{
+    color: yellow;
+    position: relative;
+    top: 2px;
+}
+
+.class-movie .ri-star-line{
+    position: relative;
+    top: 2px;
+    color: #a8a8a8;
+}
+
+.class-movie .ri-star-half-line{
+    position: relative;
+    top: 2px;
+    color: yellow;
+}
+
+.modal .play__trailer-button{
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    width: max-content;
+    margin: 0;
+}
+
+.modal .play__trailer-button a:hover{
+    color: #a22;
+}
+
+.play__trailer-button a{
+    display: flex;
+    align-items: center;
+    color: #000;
+    transition: color 300ms ease-out;
+}
+
+.play__trailer-button svg{
+    width: 30px;
+    height: 30px;
+}
+
+.play__trailer-button span{
+    margin-left: 5px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.modal .title-sinopse{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.modal .desc{
+    font-size: 15px;
+    margin-top: 3px;
+    max-height: 260px;
+    overflow-y: auto;
+    line-height: 1.5;
+}

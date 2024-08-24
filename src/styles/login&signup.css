@@ -1,0 +1,25 @@
+.login__section{
+    margin: 100px auto;
+    max-width: 1200px;
+  }
+  
+  @media screen and (max-width: 1023px){
+    .container__login{
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+  
+  .input-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .input-icons i{
+    position: absolute;
+    margin-right: 10px;
+    font-size: 1.25em;
+    cursor: pointer;
+    color: #fff;
+  }

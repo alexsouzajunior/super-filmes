@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Filmes - Categoria Serie - Ação</title>
+    <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
+    <link rel="stylesheet" href="/src/vendors/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/styles/navigation-bar.css">
+    <link rel="stylesheet" href="/src/styles/main-content.css">
+    <link rel="stylesheet" href="/src/styles/media-queries.css">
+    <link rel="stylesheet" href="/src/styles/movie-description-modal.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <link rel="stylesheet" href="/src/vendors/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="navbar container__navbar">
+        <section class="navbar__left">
+            <a href="/index.html" class="logo">
+                Super <span>Filmes</span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </section>
+        <section class="navbar__center">
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <span class="menu__arrow"><i class="ri-arrow-left-s-line"></i>Voltar</span>
+                    <span class="menu__title"></span>
+                </div>
+                <ul class="menu__inner">
+                    <li class="menu__item"><a href="/index.html" class="menu__link">Início</a></li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Filmes</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Filmes</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/aventura/aventura.html">
+                                        <span class="submenu__titlemain">Aventura</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/biblicos/biblicos.html">
+                                        <span class="submenu__titlemain">Bíblicos</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Séries</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Séries</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item"><a href="/src/pages/sobre/sobre.html" class="menu__link"><span>Sobre</span></a></li>
+                    <div class="sign-in-hidden">
+                        <a role="button" href="/src/pages/login/login.html">Login</a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="navbar__right">
+            <div class="sign-in">
+                <a role="button" href="/src/pages/login/login.html">Login</a>
+            </div>
+            <div class="searchBox-container">
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class="ri-close-line cancel"></i>
+                        <i class="ri-search-line search"></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="search" placeholder="Buscar">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<div class="container-slide">
+<section class="main swiper mySwiper sliderMoviePages">
+    
+    <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/series/acao/Os Cadetes Mech.jpg" class="image" />
+            <div class="image__content">
+                <span class="text"><img style="max-width: 350px;" src="/src/assets/movie-titles/series/ação/Os Cadetes Mech - logo.png" class="movie-title" alt="Título do filme: Os Cadetes Mech" /></span>
+                <div class="tags">
+                    <span>2023</span><span>Ação</span><span>2 temporadas</span>
+                </div>
+                <p class="desc-movie">Um adolescente se une a um grupo de cadetes escolhidos para pilotar robôs espaciais e defender a Terra contra alienígenas monstruosos.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-séries/ação/os-cadetes-mech-poster.png" alt="Os Cadetes Mech - poster">
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/series/acao/Song of the Bandits.jpg" class="image" />
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/series/ação/Song of the Bandits.png" class="movie-title" alt="Título do filme: Song of the Bandits" /></span>
+                <div class="tags">
+                    <span>2023</span><span>Ação</span><span>1 temporada</span>
+                </div>
+                <p class="desc-movie">Gando é uma terra sem lei, mas seus destemidos habitantes arriscam tudo, até suas próprias vidas, para proteger seu lar e aqueles a quem amam.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-séries/ação/song-of-the-bandits-poster.jpg" alt="Song of the Bandits - poster">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+    </div>
+</section>
+</div>
+
+<section class="container__title">
+    <span>Series de Ação</span>
+</section>
+
+<div class="container__poster">
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/the-continental-from-the-world-of-john-wick-poster.jpg" alt="The Continental: From the World of John Wick - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/The Continental - From the World of John Wick.jpg" data-src="/src/assets/posters-séries/ação/trailer/O Continental_ Do Mundo de John Wick - Trailer Oficial.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/the-continental-from-the-world-of-john-wick-poster.jpg"
+                            alt="The Continental: From the World of John Wick - poster" />
+                    </div>
+                    <h4 class="title">The Continental: From the World of John Wick</h4>
+                    <div class="tags-movie"><span>2023</span><span>Ação</span><span>1 temporada</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <i class="ri-star-line"></i>
+                        7,2/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/The Continental - From the World of John Wick.jpg" data-src="/src/assets/posters-séries/ação/trailer/O Continental_ Do Mundo de John Wick - Trailer Oficial.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        O Continental é uma rede de hotéis que serve como terreno neutro para agentes do submundo. Os funcionários do Continental lidam com assassinos e conspirações enquanto tentam equilibrar a balança a seu favor.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>The Continental: From the World of John Wick</h3>
+                <span>2 temporadas &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/os-cadetes-mech-poster.png" alt="Os Cadetes Mech - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Os Cadetes Mech.jpg" data-src="/src/assets/posters-séries/ação/trailer/Os Cadetes Mech - Trailer Dublado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao-two" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao-two" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/os-cadetes-mech-poster.png" alt="Os Cadetes Mech - poster" />
+                    </div>
+                    <h4 class="title">Os Cadetes Mech</h4>
+                    <div class="tags-movie"><span>2023</span><span>Ação</span><span>2 temporadas</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <i class="ri-star-line"></i>
+                        6,7/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Os Cadetes Mech.jpg" data-src="/src/assets/posters-séries/ação/trailer/Os Cadetes Mech - Trailer Dublado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Um adolescente se une a um grupo de cadetes escolhidos para pilotar robôs espaciais e defender a Terra contra alienígenas monstruosos.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Os Cadetes Mech</h3>
+                <span>2 temporadas &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/conexões-poster.png" alt="Conexões - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Conexões.jpg" data-src="/src/assets/posters-séries/ação/trailer/Conexões 2023 Trailer Oficial Dublado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao-tree" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao-tree" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/conexões-poster.png" alt="Conexões - poster" />
+                    </div>
+                    <h4 class="title">Conexões</h4>
+                    <div class="tags-movie"><span>2023</span><span>Thriller</span><span>1 temporada</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        6,5/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Conexões.jpg" data-src="/src/assets/posters-séries/ação/trailer/Conexões 2023 Trailer Oficial Dublado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Liaison é uma série de televisão franco-inglesa criada por Virginie Brac e dirigida por Stephen Hopkins. É protagonizada por Eva Green e Vincent Cassel. É o primeiro programa original da Apple TV+ em francês. Foi lançado em 24 de fevereiro de 2023.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Conexões</h3>
+                <span>1 temporada &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/mistério-no-mar-poster.png" alt="Mistério no Mar - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Mistério no Mar.jpg" data-src="/src/assets/posters-séries/ação/trailer/Mistério no Mar Trailer Oficial Legendado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao-five" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao-five" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/mistério-no-mar-poster.png" alt="Mistério no Mar - poster" />
+                    </div>
+                    <h4 class="title">Mistério no Mar</h4>
+                    <div class="tags-movie"><span>2023</span><span>Thriller</span><span>2 temporadas</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        5,8/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Mistério no Mar.jpg" data-src="/src/assets/posters-séries/ação/trailer/Mistério no Mar Trailer Oficial Legendado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Um grupo de trabalhadores em uma remota plataforma de petróleo escocesa deve retornar ao continente quando uma misteriosa névoa os encobre e forças sobrenaturais começam a se manifestar.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Mistério no Mar</h3>
+                <span>2 temporadas &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/cães-de-caça-poster.png" alt="Cães de Caça - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Cães de Caça.jpg" data-src="/src/assets/posters-séries/ação/trailer/Cães de Caça _ Teaser oficial _ Netflix.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao-six" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao-six" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/cães-de-caça-poster.png" alt="Cães de Caça - poster" />
+                    </div>
+                    <h4 class="title">Cães de Caça</h4>
+                    <div class="tags-movie"><span>2023</span><span>Ação </span><span>1 temporada</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        8,1/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Cães de Caça.jpg" data-src="/src/assets/posters-séries/ação/trailer/Cães de Caça _ Teaser oficial _ Netflix.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Dois jovens boxeadores se unem para derrubar um agiota cruel que oprime os mais vulneráveis.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Cães de Caça</h3>
+                <span>1 temporada &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-séries/ação/song-of-the-bandits-poster.jpg" alt="Song of the Bandits - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Song of the Bandits.jpg" data-src="/src/assets/posters-séries/ação/trailer/Song of the Bandits _ Official Trailer _ Netflix.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__serie">
+                <a href="#desc-serie-c-series-açao-seven" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-serie-c-series-açao-seven" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-séries/ação/song-of-the-bandits-poster.jpg" alt="Song of the Bandits - poster" />
+                    </div>
+                    <h4 class="title">Song of the Bandits</h4>
+                    <div class="tags-movie"><span>2023</span><span>Ação</span><span>1 temporada</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <i class="ri-star-line"></i>
+                        7,2/10
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-séries/ação/trailer/thumbnail/Song of the Bandits.jpg" data-src="/src/assets/posters-séries/ação/trailer/Song of the Bandits _ Official Trailer _ Netflix.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Gando é uma terra sem lei, mas seus destemidos habitantes arriscam tudo, até suas próprias vidas, para proteger seu lar e aqueles a quem amam.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Song of the Bandits</h3>
+                <span>1 temporada &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer__content">
+        <h2 class="logo__superfilmes">Super Filmes</h2>
+        <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
+    </div>
+</footer>
+
+<div class="modal-video js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="close">
+        <i class="ph ph-x js-modal-close"></i>
+    </div>
+    <div class="modal__content">
+        <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" src="">
+            <p class="vjs-no-js">
+                Para ver este vídeo, habilite o JavaScript e considere atualizar para um navegador que
+                <a href="https://videojs.com/html5-video-support/" target="_blank">suporta vídeo HTML5</a>
+            </p>
+        </video>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="/src/scripts/app.js"></script>
+<script src="/src/scripts/slider-main-pages.js"></script>
+<script src="/src/scripts/modal-video.js"></script>
+<script src="/src/vendors/jquery.modal.min.js"></script>
+</body>
+</html>

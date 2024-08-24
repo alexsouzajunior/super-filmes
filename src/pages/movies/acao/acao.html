@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Filmes - Categoria - Ação</title>
+    <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
+    <link rel="stylesheet" href="/src/vendors/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/styles/navigation-bar.css">
+    <link rel="stylesheet" href="/src/styles/main-content.css">
+    <link rel="stylesheet" href="/src/styles/media-queries.css">
+    <link rel="stylesheet" href="/src/styles/movie-description-modal.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <link rel="stylesheet" href="/src/vendors/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="navbar container__navbar">
+        <section class="navbar__left">
+            <a href="/index.html" class="logo">
+                Super <span>Filmes</span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </section>
+        <section class="navbar__center">
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <span class="menu__arrow"><i class="ri-arrow-left-s-line"></i>Voltar</span>
+                    <span class="menu__title"></span>
+                </div>
+                <ul class="menu__inner">
+                    <li class="menu__item"><a href="/index.html" class="menu__link">Início</a></li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Filmes</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Filmes</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/aventura/aventura.html">
+                                        <span class="submenu__titlemain">Aventura</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/biblicos/biblicos.html">
+                                        <span class="submenu__titlemain">Bíblicos</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Séries</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Séries</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item"><a href="/src/pages/sobre/sobre.html" class="menu__link"><span>Sobre</span></a></li>
+                    <div class="sign-in-hidden">
+                        <a role="button" href="/src/pages/login/login.html">Login</a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="navbar__right">
+            <div class="sign-in">
+                <a role="button" href="/src/pages/login/login.html">Login</a>
+            </div>
+            <div class="searchBox-container">
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class="ri-close-line cancel"></i>
+                        <i class="ri-search-line search"></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="search" placeholder="Buscar">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<div class="container-slide">
+<section class="main swiper mySwiper sliderMoviePages">
+    <div class="spinner__loading"></div>
+    <div class="swiper-wrapper">
+        <div class="slide swiper-slide swiper-slide-active">
+            <img src="/src/assets/thumbnail-slides-movies/acao/Corações de Ferro.jpg" alt="Corações de Ferro" class="image" />
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/acao/Corações de Ferro-logo.png" class="movie-title" alt="Título do filme: Coração de ferro" /></span>
+                <div class="tags">
+                    <span>Ação</span><span>2h 14min</span><span>2014</span>
+                </div>
+                <p class="desc-movie">Durante o final da Segunda Guerra Mundial, o sargento Don Wardaddy lidera um grupo de apenas cinco soldados norte-americanos encarregado de aniquilar os nazistas. Em um tanque de guerra Sherman, os homens enfrentam uma missão mortal.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/acao/Corações-de-Ferro.jpg" alt="Corações de Ferro - poster">
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/acao/topgun.png" alt="Top Gun: Maverick" class="image">
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/acao/Top_Gun_Maverick_logo.png" class="movie-title" alt="Título do filme: Top Gun: Maverick" /></span>
+                <div class="tags">
+                    <span>Ação</span><span>2h 11min</span><span>2022</span>
+                </div>
+                <p class="desc-movie">Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete "Maverick" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano ainda é essencial.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/acao/Top-Gun-Maverick-poster.jpg" alt="Top Gun: Maverick - poster">
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/acao/Círculo de Fogo A Revolta.png" alt="Círculo de Fogo: A Revolta" class="image">
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/acao/Círculo de Fogo-A Revolta-logo.png" class="movie-title" alt="Título do filme: Círculo de Fogo: A Revolta"></span>
+                <div class="tags">
+                    <span>Ação</span><span>1h 51min</span><span>2018</span>
+                </div>
+                <p class="desc-movie">O piloto rebelde Jake Pentecost e sua irmã distante lideram uma nova geração de guerreiros corajosos contra monstros de outro mundo que querem destruir a humanidade.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/acao/Círculo-de-Fogo-A-Revolta.jpg" alt="Círculo de Fogo: A Revolta - poster">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+    </div>
+</section>
+</div>
+
+<section class="container__title">
+    <span>Filmes de Ação</span>
+</section>
+
+<div class="container__poster">
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Corações-de-Ferro.jpg" alt="Corações de Ferro - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/coração-de-ferro.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Corações de Ferro - trailer-legendado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Corações-de-Ferro.jpg" alt="Corações de Ferro - poster" />
+                    </div>
+                    <h4 class="title">Corações de Ferro</h4>
+                    <div class="tags-movie"><span>2014</span><span>Guerra/Ação</span><span>2h 14min</span></div>
+                        <span class="class-movie">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                            4,4
+                        </span>
+                        <div class="play__trailer-button">
+                            <a href="#" class="play-trailer"
+                                data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/coração-de-ferro.jpg"
+                                data-src="/src/assets/posters-movies/categorias/acao/trailer/Corações de Ferro - trailer-legendado.mp4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                        <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                    </g>
+                                </svg>
+                                <span>Play Trailer</span>
+                            </a>
+                        </div>
+                        <h2 class="title-sinopse">
+                            Sinopse do filme
+                        </h2>
+                    <div class="desc">
+                        <p>
+                            Durante o final da Segunda Guerra Mundial, o sargento Don Wardaddy lidera um grupo de apenas cinco soldados
+                            norte-americanos encarregado de aniquilar os nazistas. Em um tanque de guerra Sherman, os homens enfrentam uma
+                            missão mortal. Apesar da desvantagem numérica, falta de armas e um soldado inexperiente, Wardaddy e seus homens se
+                            movimentam em um ataque espetacular no coração da Alemanha nazista.
+                        </p>
+                    </div>
+                    <!-- <i class="ri-play-circle-line play__trailer-film play-trailer" title="Assistir trailer" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/coração-de-ferro.jpg" data-src="/src/assets/posters-movies/categorias/acao/trailer/Corações de Ferro - trailer-legendado.mp4"></i> -->
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Corações de Ferro</h3>
+                <span>2hr 14min &sdot; 2014</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Eu-Robo-poster.jpg" alt="Eu, Robô - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/eu-robo.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Eu-Robô-trailer.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-two" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-two" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Eu-Robo-poster.jpg" alt="Eu, Robô - poster" />
+                    </div>
+                    <h4 class="title">Eu, Robô</h4>
+                    <div class="tags-movie"><span>2004</span><span>Ficção científica/Ação</span><span>1h 55min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        4,2
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/eu-robo.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Eu-Robô-trailer.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Em 2035, é comum robôs serem usados como empregados e assistentes dos humanos. Para manter a ordem, esses robôs possuem um código que impede a violência contra humanos, a chamada Lei dos Robóticos. Quando Dr. Miles aparece morto e o principal suspeito é justamente um robô, acredita-se na possibilidade de que eles tenham encontrado um meio de desativar essa programação.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Eu, Robô</h3>
+                <span>1hr 55min &sdot; 2004</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Emancipation-poster.jpg" alt="Emancipation - uma história de liberdade - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Emancipation.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Emancipation - Uma-história-de-liberdade — Trailer-oficial.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-tree" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-tree" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Emancipation-poster.jpg" alt="Emancipation - uma história de liberdade - poster" />
+                    </div>
+                    <h4 class="title">Emancipation - uma história de liberdade</h4>
+                    <div class="tags-movie"><span>2022</span><span>Ação/Thriller</span><span>2h 12min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        4,3
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Emancipation.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Emancipation - Uma-história-de-liberdade — Trailer-oficial.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        O escravizado Peter foge de seus captores pelos impiedosos pântanos de Louisiana. Ele se esconde em meio à mata selvagem cheia de animais para despistar capatazes, enfrenta noites frias e animais selvagens em uma tortuosa jornada em direção ao Norte.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Emancipation</h3>
+                <span>2hr 12min &sdot; 2022</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Beekeeper-Rede-de-Vingança.jpg" alt="Beekeeper: Rede de Vingança - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Beekeeper-Rede-de-Vingança.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/BEEKEEPER-REDE-DE-VINGANÇA-Trailer-Oficial-Dublado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-four" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-four" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Beekeeper-Rede-de-Vingança.jpg"
+                            alt="Beekeeper: Rede de Vingança - poster" />
+                    </div>
+                    <h4 class="title">Beekeeper: Rede de Vingança</h4>
+                    <div class="tags-movie"><span>2024</span><span>Ação/Thriller</span><span>1h 45min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        4,2
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Beekeeper-Rede-de-Vingança.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/BEEKEEPER-REDE-DE-VINGANÇA-Trailer-Oficial-Dublado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        As ações brutais de vingança de um homem assume riscos de proporções nacionais quando é revelado que ele é um ex-agente de uma organização poderosa e clandestina.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Beekeeper: Rede de Vingança</h3>
+                <span>1hr 45min &sdot; 2024</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Top-Gun-Maverick-poster.jpg" alt="Top Gun: Maverick - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Top-Gun-Maverick.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Top Gun_ Maverick - Official-Trailer.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-five" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-five" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Top-Gun-Maverick-poster.jpg"
+                            alt="Top Gun: Maverick - poster" />
+                    </div>
+                    <h4 class="title">Top Gun: Maverick</h4>
+                    <div class="tags-movie"><span>2022</span><span>Ação/Thriller</span><span>2h 11min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        4,6
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Top-Gun-Maverick.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Top Gun_ Maverick - Official-Trailer.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete "Maverick" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano ainda é essencial.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Top Gun: Maverick</h3>
+                <span>2hr 11min &sdot; 2022</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/O-Protetor-Capítulo-Final.jpg" alt="O Protetor: Capítulo Final - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/O-Protetor-Capítulo-Final.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/O Protetor_ Capítulo Final - Trailer-Oficial-Dublado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-six" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-six" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/O-Protetor-Capítulo-Final.jpg"
+                            alt="O Protetor: Capítulo Final - poster" />
+                    </div>
+                    <h4 class="title">O Protetor: Capítulo Final</h4>
+                    <div class="tags-movie"><span>2023</span><span>Ação/Thriller</span><span>1h 49min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        4,2
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/O-Protetor-Capítulo-Final.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/O Protetor_ Capítulo Final - Trailer-Oficial-Dublado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Sentindo-se em casa no sul da Itália, o ex-agente Robert McCall logo descobre que seus novos amigos estão sob o controle dos chefes do crime local.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>O Protetor: Capítulo Final</h3>
+                <span>1hr 49min &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Círculo-de-Fogo-A-Revolta.jpg" alt="Círculo de Fogo: A Revolta - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Círculo-de-Fogo-A-Revolta.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Círculo de Fogo-A-Revolta-Trailer.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-seven" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-seven" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Círculo-de-Fogo-A-Revolta.jpg"
+                            alt="Círculo de Fogo: A Revolta - poster" />
+                    </div>
+                    <h4 class="title">Círculo de Fogo: A Revolta</h4>
+                    <div class="tags-movie"><span>2018</span><span>Ação/Ficção científica</span><span>1h 51min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <i class="ri-star-line"></i>
+                        3,3
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Círculo-de-Fogo-A-Revolta.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Círculo de Fogo-A-Revolta-Trailer.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        O piloto rebelde Jake Pentecost e sua irmã distante lideram uma nova geração de guerreiros corajosos contra monstros de outro mundo que querem destruir a humanidade.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Círculo de Fogo: A Revolta</h3>
+                <span>1hr 51min &sdot; 2018</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Eu-sou-a-lenda-poster.jpg" alt="Eu sou a Lenda - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Eu-sou-a-Lenda.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Eu Sou a Lenda - Trailer Legendado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-eight" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-eight" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Eu-sou-a-lenda-poster.jpg" alt="Eu sou a Lenda - poster" />
+                    </div>
+                    <h4 class="title">Eu sou a Lenda</h4>
+                    <div class="tags-movie"><span>2007</span><span>Ação/Ficção científica</span><span>1h 41min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        4,4
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Eu-sou-a-Lenda.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Eu Sou a Lenda - Trailer Legendado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Robert Neville é um brilhante cientista e o único sobrevivente de uma epidemia que transformou os humanos em mutantes sedentos por sangue. Andando pela cidade de Nova York, ele procura por outros possíveis sobreviventes e tenta achar a cura da praga usando seu próprio sangue, que é imune.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Eu sou a Lenda</h3>
+                <span>1hr 41min &sdot; 2007</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/acao/Blade - O-Caçador-de-Vampiros-poster.jpg" alt="Blade - O Caçador de Vampiros - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Blade - O-Caçador-de-Vampiros.jpg"
+            data-src="/src/assets/posters-movies/categorias/acao/trailer/Blade, o Caçador de Vampiros (Trailer Original).mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-açao-nine" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-açao-nine" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/acao/Blade - O-Caçador-de-Vampiros-poster.jpg"
+                            alt="Blade - O Caçador de Vampiros - poster" />
+                    </div>
+                    <h4 class="title" title="Blade">Blade - O Caçador de Vampiros</h4>
+                    <div class="tags-movie"><span>1998</span><span>Terror/Ação</span><span>2 horas</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        3,9
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer"
+                            data-poster="/src/assets/posters-movies/categorias/acao/trailer/thumbnail/Blade - O-Caçador-de-Vampiros.jpg"
+                            data-src="/src/assets/posters-movies/categorias/acao/trailer/Blade, o Caçador de Vampiros (Trailer Original).mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        O herói Blade , metade mortal e metade imortal, parte em busca do vampiro responsável pela morte de sua mãe. Blade quer eliminá-lo do mundo dos vampiros e em um mundo tecnologicamente avançado, Blade lutará para capturar aquele que quer destruir a vida humana.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3>Blade - O Caçador de Vampiros</h3>
+                <span>2 horas &sdot; 1998</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer__content">
+        <h2 class="logo__superfilmes">Super Filmes</h2>
+        <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
+    </div>
+</footer>
+
+<div class="modal-video js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="close">
+        <i class="ph ph-x js-modal-close"></i>
+    </div>
+    <div class="modal__content">
+        <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" src="">
+            <p class="vjs-no-js">
+                Para ver este vídeo, habilite o JavaScript e considere atualizar para um navegador que
+                <a href="https://videojs.com/html5-video-support/" target="_blank">suporta vídeo HTML5</a>
+            </p>
+        </video>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="/src/scripts/app.js"></script>
+<script src="/src/scripts/slider-main-pages.js"></script>
+<script src="/src/scripts/modal-video.js"></script>
+<script src="/src/vendors/jquery.modal.min.js"></script>
+</body>
+</html>

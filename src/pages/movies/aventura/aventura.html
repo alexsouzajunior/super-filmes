@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Filmes - Categoria - Aventura</title>
+    <link rel="website icon" type="png" href="/src/assets/logo/logo.png" />
+    <link rel="stylesheet" href="/src/vendors/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/styles/navigation-bar.css">
+    <link rel="stylesheet" href="/src/styles/main-content.css">
+    <link rel="stylesheet" href="/src/styles/media-queries.css">
+    <link rel="stylesheet" href="/src/styles/movie-description-modal.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <link rel="stylesheet" href="/src/vendors/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header" id="header">
+    <nav class="navbar container__navbar">
+        <section class="navbar__left">
+            <a href="/index.html" class="logo">
+                Super <span>Filmes</span>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </section>
+        <section class="navbar__center">
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <div class="menu__header">
+                    <span class="menu__arrow"><i class="ri-arrow-left-s-line"></i>Voltar</span>
+                    <span class="menu__title"></span>
+                </div>
+                <ul class="menu__inner">
+                    <li class="menu__item"><a href="/index.html" class="menu__link">Início</a></li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Filmes</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Filmes</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/movies/biblicos/biblicos.html">
+                                        <span class="submenu__titlemain">Bíblicos</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <div class="menu__session-name">
+                            <span>Séries</span>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="submenu megamenu__image">
+                            <span class="submenu-title">Séries</span>
+                            <div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/acao/acao.html">
+                                        <span class="submenu__titlemain">Ação</span>
+                                    </a>
+                                </div>
+                                <div class="submenu__category">
+                                    <a href="/src/pages/series/animacao/animacao.html">
+                                        <span class="submenu__titlemain">Animação</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item"><a href="/src/pages/sobre/sobre.html" class="menu__link"><span>Sobre</span></a></li>
+                    <div class="sign-in-hidden">
+                        <a role="button" href="/src/pages/login/login.html">Login</a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="navbar__right">
+            <div class="sign-in">
+                <a role="button" href="/src/pages/login/login.html">Login</a>
+            </div>
+            <div class="searchBox-container">
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class="ri-close-line cancel"></i>
+                        <i class="ri-search-line search"></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="search" placeholder="Buscar">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+</header>
+
+<div class="container-slide">
+<section class="main swiper mySwiper sliderMoviePages">
+    <div class="spinner__loading"></div>
+    <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/aventura/Interstellar.jpg" class="image" />
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/aventura/Interstellar-logo.png" class="movie-title" alt="Título do filme: Interestelar" /></span>
+                <div class="tags">
+                    <span>2014</span><span>Ficção científica/Aventura</span><span>2h 49min</span>
+                </div>
+                <p class="desc-movie">As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/aventura/Interstellar-poster.png" alt="Interstellar - poster">
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/aventura/patos_.png" class="image">
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/aventura/Patos! - logo.png" class="movie-title" alt="Título do filme: Patos!" /></span>
+                <div class="tags">
+                    <span>2023</span><span>Comédia/Aventura</span><span>1h 22min</span>
+                </div>
+                <p class="desc-movie">Uma família de patos decide deixar a segurança de um lago da Nova Inglaterra, nos Estados Unidos, para se aventurar na Jamaica. No entanto, seus planos são frustrados quando eles se perdem e acabam na cidade de Nova York.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/aventura/Patos-poster.jpg" alt="Patos! - poster">
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="/src/assets/thumbnail-slides-movies/aventura/stuart-little.jpg" class="image">
+            <div class="image__content">
+                <span class="text"><img src="/src/assets/movie-titles/aventura/o-pequeno-stuart-little.png" class="movie-title" alt="Título do filme: O Pequeno Stuart Little"></span>
+                <div class="tags">
+                    <span>1999</span><span>Comédia/Aventura</span><span>1h 32min</span>
+                </div>
+                <p class="desc-movie">Os Little vão a um orfanato para adotar um novo membro da família, e um jovem rato charmoso chamado Stuart é escolhido. Enquanto George fica inicialmente indiferente com o seu novo irmão, o gato da família, Snowbell, se mostra ainda menos entusiasmado com a ideia de ter um rato como seu mestre e planeja se livrar dele.</p>
+            </div>
+            <div class="poster__movie-slide">
+                <img src="/src/assets/posters-movies/categorias/aventura/stuart-little.jpg" alt="Stuart Little - poster">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+    </div>
+</section>
+</div>
+
+<section class="container__title">
+    <span>Filmes de Aventura</span>
+</section>
+
+<div class="container__poster">
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+                <img src="/src/assets/posters-movies/categorias/aventura/Interstellar-poster.png" alt="Interestelar - poster" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Interstellar.webp" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Interestelar - Trailer Oficial.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/Interstellar-poster.png" alt="Interestelar - poster" />
+                    </div>
+                    <h4 class="title">Interestelar</h4>
+                    <div class="tags-movie"><span>2014</span><span>Ficção científica/Aventura</span><span>2h 49min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        4,1
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Interstellar.webp" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Interestelar - Trailer Oficial.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="Interestelar">Interestelar</h3>
+                <span>2hr 49min &sdot; 2014</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/aventura/Patos-poster.jpg" alt="Patos! - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Patos!.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/PATOS! - Trailer Oficial.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura-two" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura-two" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/Patos-poster.jpg" alt="Patos! - poster" />
+                    </div>
+                    <h4 class="title">Patos!</h4>
+                    <div class="tags-movie"><span>2023</span><span>Comédia/Aventura</span><span>1h 22min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        4,4
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Patos!.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/PATOS! - Trailer Oficial.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Uma família de patos decide deixar a segurança de um lago da Nova Inglaterra, nos Estados Unidos, para se aventurar na Jamaica. No entanto, seus planos são frustrados quando eles se perdem e acabam na cidade de Nova York.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="Patos">Patos!</h3>
+                <span>1hr 31min &sdot; 2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/aventura/stuart-little.jpg" alt="O Pequeno Stuart Little - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/O Pequeno Stuart Little.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Stuart Little Official Trailer.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura-tree" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura-tree" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/stuart-little.jpg"
+                            alt="O Pequeno Stuart Little - poster" />
+                    </div>
+                    <h4 class="title">O Pequeno Stuart Little</h4>
+                    <div class="tags-movie"><span>1999</span><span>Comédia/Aventura</span><span>1h 32min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        3,8
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/O Pequeno Stuart Little.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Stuart Little Official Trailer.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Os Little vão a um orfanato para adotar um novo membro da família, e um jovem rato charmoso chamado Stuart é escolhido. Enquanto George fica inicialmente indiferente com o seu novo irmão, o gato da família, Snowbell, se mostra ainda menos entusiasmado com a ideia de ter um rato como seu mestre e planeja se livrar dele.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="O Pequeno Stuart Little">O Pequeno Stuart Little</h3>
+                <span>1hr 32min &sdot; 1999</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/aventura/Tomb Raider - A Origem.jpg" alt="Tomb Raider: A Origem - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Tomb Raider - A Origem.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Tomb Raider_ A Origem - Trailer Oficial 1 (leg).mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura-four" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura-four" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/Tomb Raider - A Origem.jpg"
+                            alt="Tomb Raider: A Origem - poster" />
+                    </div>
+                    <h4 class="title">Tomb Raider: A Origem</h4>
+                    <div class="tags-movie"><span>2018</span><span>Ação/Aventura</span><span>1h 58min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-line"></i>
+                        <i class="ri-star-line"></i>
+                        3,7
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/Tomb Raider - A Origem.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/Tomb Raider_ A Origem - Trailer Oficial 1 (leg).mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Lara Croft é a independente filha de um aventureiro excêntrico que desapareceu há anos. Com a esperança de resolver o mistério do sumiço de seu pai, Lara embarca em uma perigosa jornada para seu último destino conhecido - um túmulo lendário em uma ilha mítica que pode estar em algum lugar ao largo da costa do Japão. As apostas não podiam ser maiores, pois Lara precisa confiar em sua mente aguda, fé cega e espírito obstinado para se aventurar no desconhecido.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="Tomb Raider: A Origem">Tomb Raider: A Origem</h3>
+                <span>1hr 58min &sdot; 2018</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/aventura/As Crônicas de Spiderwick.jpg" alt="As Crônicas de Spiderwick - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/As Crônicas de Spiderwick.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/As Crônicas de Spiderwick Trailer Oficial Legendado.mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura-five" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura-five" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/As Crônicas de Spiderwick.jpg"
+                            alt="As Crônicas de Spiderwick - poster" />
+                    </div>
+                    <h4 class="title">As Crônicas de Spiderwick</h4>
+                    <div class="tags-movie"><span>2008</span><span>Infantil/Aventura</span><span>1h 36min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        4
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/As Crônicas de Spiderwick.jpg" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/As Crônicas de Spiderwick Trailer Oficial Legendado.mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Dos três filhos de Grace, Jared sempre foi considerado o causador de problemas. Assim, quando coisas estranhas acontecem depois que a família se muda para uma propriedade arruinada, a irmã Mallory, o irmão gêmeo Simon e a mãe pensam que Jared é o responsável por tudo. Na verdade, eles descobrem que criaturas mágicas que vagueiam pelas terras querem o livro mágico que Jared encontrou, um guia sobre criaturas fantásticas, escrito por Arthur Spiderwick.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="As Crônicas de Spiderwick">As Crônicas de Spiderwick</h3>
+                <span>1hr 36min &sdot; 2008</span>
+            </div>
+        </div>
+    </div>
+    <div class="poster__item">
+        <div class="poster__inner">
+            <div class="image-box cardsMoviePoster">
+            <div class="spinner__loading"></div>
+            <img src="/src/assets/posters-movies/categorias/aventura/A Lenda de Tarzan.jpg" alt="A Lenda de Tarzan - poster" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="play-icon playTrailer-card" viewBox="0 0 24 24" 8 fill="none" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Lenda de Tarzan.webp" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Lenda de Tarzan - Trailer Oficial (leg).mp4">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                    <path
+                        d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="info__movie">
+                <a href="#desc-film-c-aventura-six" rel="modal:open"><i class="ph ph-info" title="Descrição do Filme"></i></a>
+                <div id="desc-film-c-aventura-six" class="modal">
+                    <div class="image__poster--modal">
+                        <img src="/src/assets/posters-movies/categorias/aventura/A Lenda de Tarzan.jpg" alt="A Lenda de Tarzan - poster" />
+                    </div>
+                    <h4 class="title">A Lenda de Tarzan</h4>
+                    <div class="tags-movie"><span>2016</span><span>Ação/Aventura</span><span>1h 50min</span></div>
+                    <span class="class-movie">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                        3,9
+                    </span>
+                    <div class="play__trailer-button">
+                        <a href="#" class="play-trailer" data-poster="/src/assets/posters-movies/categorias/aventura/Trailers/thumbnail/A Lenda de Tarzan.webp" data-src="/src/assets/posters-movies/categorias/aventura/Trailers/A Lenda de Tarzan - Trailer Oficial (leg).mp4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.99 7.973v8.052a.885.885 0 0 0 1.424.699l5.575-4.336a.884.884 0 0 0-.053-1.433L10.36 7.238a.884.884 0 0 0-1.371.735" />
+                                    <rect width="18.5" stroke="#a22" height="18.5" x="2.75" y="2.75" rx="50" />
+                                </g>
+                            </svg>
+                            <span>Play Trailer</span>
+                        </a>
+                    </div>
+                    <h2 class="title-sinopse">
+                        Sinopse do filme
+                    </h2>
+                    <p class="desc">
+                        Tarzan deixou as florestas da África para viver uma vida pacata como John Clayton III, o Lorde Greystoke, ao lado de sua esposa, Jane, na Inglaterra. Agora, ele é convidado para voltar ao Congo, onde passou a maior parte da sua vida, para servir como emissário de troca do parlamento britânico. O que Tarzan não sabe é que está se dirigindo para uma armadilha mortal, fruto da vingança do capitão belga Leon Rom.
+                    </p>
+                </div>
+            </div>
+            <div class="poster__tags">
+                <h3 title="A Lenda de Tarzan">A Lenda de Tarzan</h3>
+                <span>1hr 50min &sdot; 2016</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer__content">
+        <h2 class="logo__superfilmes">Super Filmes</h2>
+        <span>&copy; 2024 <a href="/index.html">Super Filmes</a> Todos os direitos reservados. <span>Desenvolvido por Alexsandro</span></span>
+    </div>
+</footer>
+
+<div class="modal-video js-modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="close">
+        <i class="ph ph-x js-modal-close"></i>
+    </div>
+    <div class="modal__content">
+        <video id="my-video" class="video-js" controls preload="auto" data-setup="{}" src="">
+            <p class="vjs-no-js">
+                Para ver este vídeo, habilite o JavaScript e considere atualizar para um navegador que
+                <a href="https://videojs.com/html5-video-support/" target="_blank">suporta vídeo HTML5</a>
+            </p>
+        </video>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="/src/scripts/app.js"></script>
+<script src="/src/scripts/slider-main-pages.js"></script>
+<script src="/src/scripts/modal-video.js"></script>
+<script src="/src/vendors/jquery.modal.min.js"></script>
+</body>
+</html>
